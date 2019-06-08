@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: 'Verela Round', sans-serif;
 }
 #navbar {
   position: fixed;
@@ -11,6 +12,7 @@ body {
   justify-content: space-around;
   background-color: #ff8e96;
   min-width: 100vw;
+  font-family: 'Maven Pro', sans-serif;
 }
 #navbar>ul {
   list-style: none;
@@ -19,4 +21,7 @@ body {
 #navbar a {
   text-decoration: none;
   font-size: 1.2em;
+}
+#welcome-section {
+  margin-top: 100px;
 }
