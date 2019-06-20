@@ -1,7 +1,16 @@
-body {
-  text-align: center;
-  font-family: 'Verela Round', sans-serif;
+html {
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Valera Round', sans-serif;
+  display: inline;
+  background-color: #8ed4ff;
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -12,16 +21,77 @@ body {
   justify-content: space-around;
   background-color: #ff8e96;
   min-width: 100vw;
+  height: 70px;
+  max-height: 70px;
   font-family: 'Maven Pro', sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
 #navbar>ul {
   list-style: none;
   padding-left: 0;
 }
+
 #navbar a {
   text-decoration: none;
   font-size: 1.2em;
+  padding-left: 1.1em;
+  color: black;
 }
+#navbar a:hover {
+  color: #8ed4ff;
+}
+
 #welcome-section {
-  margin-top: 100px;
+  min-height: 100vh;
+  width: 100vw
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eeeeee;
+  font-family: 'Maven Pro', 'Valera Round', sans-serif;
+  /* text-shadow: 2px 2px 3px #5500ff, 2px 2px 5px #ff0055; */
+  background: linear-gradient(to top, #8ed4ff, #ff8e96);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#projects > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#div-tiles {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.project-tiles {
+
+}
+
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2), (max-width: 600px) {
+  #navbar a {
+    display: block;
+    padding: 0;
+  }
+
+  #navbar a:first-child {
+    padding-right: 2em;
+  }
+
+  #navbar a:last-child {
+    padding-left: 2em;
+  }
 }
