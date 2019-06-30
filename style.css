@@ -12,8 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  /* max-width: 100%; */
+  margin-left: calc(-50vw + 50%); // this removes left strip
   background-color: #deefff;
 }
 
@@ -64,7 +63,6 @@ body {
   text-align: center;
   color: #eeeeee;
   font-family: 'Maven Pro', 'Valera Round', sans-serif;
-  /* text-shadow: 2px 2px 3px #5500ff, 2px 2px 5px #ff0055; */
   background: linear-gradient(to top, #8ed4ff, #ff8e96);
 }
 #description {
