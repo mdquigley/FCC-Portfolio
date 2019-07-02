@@ -4,16 +4,16 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
+  background-color: #deefff;
   font-family: 'Maven Pro', sans-serif;
   display: flex;
   flex-direction: column;
   width: 100vw;
   margin-left: calc(-50vw + 50%); // this removes left strip
-  background-color: #deefff;
 }
 
 #navbar {
